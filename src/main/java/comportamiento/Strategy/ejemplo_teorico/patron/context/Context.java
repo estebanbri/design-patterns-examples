@@ -10,8 +10,8 @@ public class Context {
         this.strategy = strategy;
     }
 
-    public int execute() {
-        return this.strategy.execute(5,10);
+    public int execute(int a, int b) {
+        return this.strategy.execute(a,b);
     }
 
     public void setStrategy(IStrategy strategy){

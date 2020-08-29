@@ -18,11 +18,11 @@ public class StrategyTest {
 
         Context context = new Context(strategyA);
 
-        assertEquals(-5, context.execute());
+        assertEquals(-5, context.execute(5,10));
 
         context.setStrategy(strategyB);
 
-        assertEquals(15, context.execute());
+        assertEquals(15, context.execute(5,10));
     }
 
 }
