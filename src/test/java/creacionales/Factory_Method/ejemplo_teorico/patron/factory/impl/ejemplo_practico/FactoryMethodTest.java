@@ -1,4 +1,4 @@
-package creacionales.Factory_Method.ejemplo_teorico.factory.impl.ejemplo_practico;
+package creacionales.Factory_Method.ejemplo_teorico.patron.factory.impl.ejemplo_practico;
 
 import creacionales.Factory_Method.ejemplo_practico.patron.factory.IEnemyFactory;
 import creacionales.Factory_Method.ejemplo_practico.patron.factory.impl.EnemyAFactory;
