@@ -1,26 +1,25 @@
-package comportamiento.Strategy.ejemplo_practico;
+package comportamiento.Strategy.ejemplo_teorico.patron.strategy.impl.ejemplo_practico;
 
 import comportamiento.Strategy.ejemplo_practico.context.AttackContext;
 import comportamiento.Strategy.ejemplo_practico.strategy.IStrategy;
 import comportamiento.Strategy.ejemplo_practico.strategy.impl.GunAttackStrategy;
 import comportamiento.Strategy.ejemplo_practico.strategy.impl.SwordAttackStrategy;
+import org.junit.Test;
 
-public class Main {
+public class StrategyTest {
 
-    public static Integer HEALTH = 100;
-
-    public static void main(String[] args) {
-
+    @Test
+    public void testChangingSwordAttackStrategytoGunAttackStrategyInRuntime(){
+        final int health = 100;
         IStrategy strategyA = new SwordAttackStrategy();
         IStrategy strategyB = new GunAttackStrategy();
 
         AttackContext context = new AttackContext(strategyA);
 
-        context.attack();
+        context.attack(health);
 
         context.setStrategy(strategyB);
 
-        context.attack();
-
+        context.attack(health);
     }
 }

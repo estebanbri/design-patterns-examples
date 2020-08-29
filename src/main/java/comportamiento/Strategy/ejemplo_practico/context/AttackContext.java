@@ -10,11 +10,12 @@ public class AttackContext {
         this.strategy = strategy;
     }
 
-    public void attack() {
-        this.strategy.execute();
+    public void attack(int health) {
+        this.strategy.execute(health);
     }
 
     public void setStrategy(IStrategy strategy){
         this.strategy = strategy;
     }
+
 }
