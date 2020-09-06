@@ -7,10 +7,14 @@ public class AburridoState implements IState {
 
     private Tamagochi tamagochi;
 
+    public AburridoState(Tamagochi tamagochi) {
+        this.tamagochi = tamagochi;
+    }
+
     @Override
     public void jugar() {
         System.out.println("Estoy jugando!");
-        tamagochi.setState(new CansadoState());
+        tamagochi.setState(new CansadoState(tamagochi));
     }
 
     @Override
@@ -31,7 +35,4 @@ public class AburridoState implements IState {
         System.out.println("Tengo ganas de jugar...");
     }
 
-    public void setTamagochi(Tamagochi tamagochi) {
-        this.tamagochi = tamagochi;
-    }
 }

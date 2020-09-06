@@ -7,14 +7,14 @@ public class ConcreteStateA implements IState {
 
     private Context context;
 
+    public ConcreteStateA(Context context) {
+        this.context = context;
+    }
+
     @Override
     public void doAction() {
         System.out.println("doAction ConcreteStateA");
-        context.setState(new ConcreteStateB());
-    }
-
-    public void setContext(Context context) {
-        this.context = context;
+        context.changeState(new ConcreteStateB(context));
     }
 
 }

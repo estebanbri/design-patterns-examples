@@ -9,17 +9,7 @@ public class Tamagochi {
     private IState state;
 
     public Tamagochi(){
-        setState(new AburridoState()); // stateA es el estado inicial
-    }
-
-    public void setState(IState currentState) {
-        this.state = currentState;
-        this.state.setTamagochi(this);
-        System.out.println("Current State: " + currentState.getClass().getSimpleName());
-    }
-
-    public IState getState() {
-        return state;
+        setState(new AburridoState(this)); // stateA es el estado inicial
     }
 
     public void jugar(){
@@ -40,5 +30,15 @@ public class Tamagochi {
 
     public void comoEstas(){
         state.comoEstas();
+    }
+
+
+    public void setState(IState currentState) {
+        this.state = currentState;
+        System.out.println("Current State: " + currentState.getClass().getSimpleName());
+    }
+
+    public IState getState() {
+        return state;
     }
 }

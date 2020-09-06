@@ -7,6 +7,10 @@ public class DurmiendoState implements IState {
 
     private Tamagochi tamagochi;
 
+    public DurmiendoState(Tamagochi tamagochi) {
+        this.tamagochi = tamagochi;
+    }
+
     @Override
     public void jugar() {
     }
@@ -16,14 +20,15 @@ public class DurmiendoState implements IState {
 
     }
 
-
+    @Override
     public void dormir() {
 
     }
+
     @Override
     public void despertar() {
         System.out.println("Buenas, me desperte...");
-        tamagochi.setState(new AburridoState());
+        tamagochi.setState(new AburridoState(tamagochi));
     }
 
     @Override
@@ -31,7 +36,4 @@ public class DurmiendoState implements IState {
         System.out.println("ZzzzZZzzzz..");
     }
 
-    public void setTamagochi(Tamagochi tamagochi) {
-        this.tamagochi = tamagochi;
-    }
 }

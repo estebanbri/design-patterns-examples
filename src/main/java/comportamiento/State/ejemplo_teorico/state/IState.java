@@ -8,5 +8,4 @@ import comportamiento.State.ejemplo_teorico.context.Context;
  */
 public interface IState {
      void doAction();
-     void setContext(Context context);
 }

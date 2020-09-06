@@ -13,6 +13,4 @@ public interface IState {
       void dormir();
       void despertar();
       void comoEstas();
-
-      void setTamagochi(Tamagochi tamagochi);
 }

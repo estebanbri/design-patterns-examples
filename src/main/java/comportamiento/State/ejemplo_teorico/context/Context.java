@@ -8,18 +8,16 @@ public class Context {
     private IState state; // current state
 
     public Context(){
-
-        setState(new ConcreteStateA()); // stateA es el estado inicial
+        changeState(new ConcreteStateA(this)); // stateA es el estado inicial
     }
 
     public void doAction(){
         state.doAction();
     }
 
-    public void setState(IState state) {
+    public void changeState(IState state) {
         this.state = state;
         System.out.println("Current State: " + state.getClass().getSimpleName());
-        this.state.setContext(this);
     }
 
     public IState getState() {
