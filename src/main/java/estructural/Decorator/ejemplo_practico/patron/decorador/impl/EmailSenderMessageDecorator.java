@@ -1,4 +1,4 @@
-package estructural.Decorator;
+package estructural.Decorator.ejemplo_practico.patron.decorador.impl;
 
 import estructural.Decorator.ejemplo_practico.patron.componente.MessageProcessable;
 import estructural.Decorator.ejemplo_practico.patron.decorador.MessageDecorator;

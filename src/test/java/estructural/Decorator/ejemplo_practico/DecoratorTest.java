@@ -1,10 +1,10 @@
 package estructural.Decorator.ejemplo_practico;
 
-import estructural.Decorator.EmailSenderMessageDecorator;
-import estructural.Decorator.EncodeMessageDecorator;
+import estructural.Decorator.ejemplo_practico.patron.decorador.impl.EmailSenderMessageDecorator;
+import estructural.Decorator.ejemplo_practico.patron.decorador.impl.EncodeMessageDecorator;
 import estructural.Decorator.ejemplo_practico.patron.componente.MessageProcessable;
 import estructural.Decorator.ejemplo_practico.patron.componente.impl.MessageProcessor;
-import estructural.Decorator.DecodeMessageDecorator;
+import estructural.Decorator.ejemplo_practico.patron.decorador.impl.DecodeMessageDecorator;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
