@@ -1,7 +1,7 @@
-package estructural.Bridge.con_patron.payment.impl;
+package estructural.Bridge.example1.con_patron.payment.impl;
 
-import estructural.Bridge.con_patron.gateway.PaymentGateway;
-import estructural.Bridge.con_patron.payment.Payment;
+import estructural.Bridge.example1.con_patron.gateway.PaymentGateway;
+import estructural.Bridge.example1.con_patron.payment.Payment;
 
 public class CardPayment extends Payment {
 

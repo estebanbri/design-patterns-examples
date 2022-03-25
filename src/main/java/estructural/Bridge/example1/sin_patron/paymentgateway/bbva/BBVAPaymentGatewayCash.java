@@ -1,4 +1,4 @@
-package estructural.Bridge.sin_patron.paymentgateway.bbva;
+package estructural.Bridge.example1.sin_patron.paymentgateway.bbva;
 
 import estructural.Bridge.sin_patron.paymentgateway.Payment;
 

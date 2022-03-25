@@ -1,6 +1,6 @@
-package estructural.Bridge.con_patron.gateway.impl;
+package estructural.Bridge.example1.con_patron.gateway.impl;
 
-import estructural.Bridge.con_patron.gateway.PaymentGateway;
+import estructural.Bridge.example1.con_patron.gateway.PaymentGateway;
 
 public class HSBCPaymentGateway implements PaymentGateway {
 

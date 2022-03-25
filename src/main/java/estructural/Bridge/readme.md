@@ -1,8 +1,8 @@
-Cuando ves que tu jerarquia de clases (usando herencia) se va a volver
-exponencial y tenes un diseño no escalable. Es decir cada vez que se agregue un 
-metodo de pago vas a tener que crear una clase para cada tipo de gateway de pago.
+Preguntas que tenes que hacer para saber si hay que usarlo al patron bridge?
+1- La jerarquia de herencia convensional se va volver exponencial con todas las combinaciones posibles de subclases?' 
+2- Necesito usar un mecanismo de herencia pero necesito flexibilidad, por ende el uso de la herencia convencional no me sirve porque se crea un tightly binding entre clase hijas y clase padre?
 
-Lo anterior es un indicio para aplicar patron bridge el cual hace separar 
-en dos jerarquias distintas y lo importante del patron es el u so de composicion para
-relacionar las abstraciones con las implementaciones reales.
 El patron se basa en la frase composition over inheritance.
+
+Reduce el numero de subclases cuando la cantidad de entidades hubieran resultado
+de combinar dos conceptos (ej, formas y colores).
