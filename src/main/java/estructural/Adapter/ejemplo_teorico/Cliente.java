@@ -1,13 +1,20 @@
 package estructural.Adapter.ejemplo_teorico;
 
+import estructural.Adapter.ejemplo_teorico.adaptee.Adaptee;
 import estructural.Adapter.ejemplo_teorico.adapter.ITarget;
+import estructural.Adapter.ejemplo_teorico.adapter.impl.Adapter;
 
-public class Cliente implements ITarget {
+public class Cliente {
 
-    @Override
-    public int request(int a, int b) { // This interface and logic will be deprecated
-        System.out.println("Executing old logic of client");
-        return a + b;
+    public static void main(String[] args) {
+
+        // Old version usaba un array como param
+        Adaptee toDeprecate = new Adaptee();
+        toDeprecate.specificRequest(new int[]{1,2});
+
+        // Usando el adaptador con 2 params
+        ITarget target = new Adapter();
+        target.request(2,4); // Este call adapta estos dos argumentos y los transforma a un array
     }
 
 }
