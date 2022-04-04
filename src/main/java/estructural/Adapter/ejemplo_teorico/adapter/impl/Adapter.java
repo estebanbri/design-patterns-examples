@@ -5,7 +5,7 @@ import estructural.Adapter.ejemplo_teorico.adapter.ITarget;
 
 public class Adapter implements ITarget {
 
-    private Adaptee adaptee = new Adaptee();
+    private Adaptee adaptee = new Adaptee(); // Objeto que vamos a adaptar (Alternativa usando composicion, tmb se puede implementar usando herencia esta linea no la pones y le pones que extends de Adaptee asi podes llamar a los metodos de adaptee aca)
 
     @Override
     public int request(int a, int b) { // Nueva interface
